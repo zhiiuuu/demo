@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>zjq多人聊天室</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet"/>
+    <link href="/mystyle.css" rel="stylesheet"/>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</head>
+<body class="bg">
+
+<!--主体框架-->
+<div class="main">
+
+    <div class="ui text container">
+        <!--消息展示区     -->
+        <div class="message show">
+            <!-- 标题           -->
+            <h5 class="ui top attached  header">
+                <span id="user_room"></span>(<span id="user_count"></span>)
+            </h5>
+            <div id="msg_list" class="ui list">
+
+            </div>
+        </div>
+
+        <!--消息发送区    -->
+        <div class="message send">
+            <div id="text_area" contenteditable="true">
+
+            </div>
+            <div id="send_button" class="ui button" style="float: right">发送</div>
+        </div>
+        <!--群成员列表-->
+        <div class="user list" style="overflow-y: auto;">
+            <div id="user_list" class="ui list">
+                <div class="item">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="image_dialog" class="ui  modal">
+    <i class="close icon"></i>
+    <div class="image content">
+        <img class="ui centered image" src=""/>
+    </div>
+</div>
+<script src="/myjs.js"></script>
+</body>
+</html>
